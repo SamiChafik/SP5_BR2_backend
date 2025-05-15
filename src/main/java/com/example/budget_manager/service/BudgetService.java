@@ -1,12 +1,11 @@
-package service;
+package com.example.budget_manager.service;
 
-import dto.BudgetDTO;
-import entity.Budget;
-import lombok.RequiredArgsConstructor;
-import mapper.BudgetMapper;
+import com.example.budget_manager.dto.BudgetDTO;
+import com.example.budget_manager.entity.Budget;
+import com.example.budget_manager.mapper.BudgetMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import repository.BudgetRepository;
+import com.example.budget_manager.repository.BudgetRepository;
 
 import java.util.List;
 
