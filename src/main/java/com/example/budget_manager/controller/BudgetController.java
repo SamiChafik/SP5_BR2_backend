@@ -1,10 +1,9 @@
-package controller;
+package com.example.budget_manager.controller;
 
-import dto.BudgetDTO;
-import lombok.RequiredArgsConstructor;
+import com.example.budget_manager.dto.BudgetDTO;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
-import service.BudgetService;
+import com.example.budget_manager.service.BudgetService;
 
 import java.util.List;
 
