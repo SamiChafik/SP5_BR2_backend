@@ -9,14 +9,14 @@ public class TransactionDTO {
 
     private Long id;
     private BigDecimal amount;
-    private Date date;
+    private LocalDate date;
     private String description;
     private String category;
 
     public TransactionDTO() {
     }
 
-    public TransactionDTO(Long id, BigDecimal amount, Date date, String description, String category) {
+    public TransactionDTO(Long id, BigDecimal amount, LocalDate date, String description, String category) {
         this.id = id;
         this.amount = amount;
         this.date = date;
@@ -40,11 +40,11 @@ public class TransactionDTO {
         this.amount = amount;
     }
 
-    public Date getDate() {
+    public LocalDate getDate() {
         return date;
     }
 
-    public void setDate(Date date) {
+    public void setDate(LocalDate date) {
         this.date = date;
     }
 
