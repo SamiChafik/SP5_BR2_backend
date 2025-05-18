@@ -22,8 +22,14 @@ public class CategoryService {
         return categoryRepository.save(category);
     }
 
-    public Category updateCategory(Category category) {
-        return categoryRepository.save(category);
+    public Category updateCategory(Long id, Category updatedCategory) {
+        Category existingCategory = categoryRepository.findById(id)
+                .orElseThrow(() -> new RuntimeException("Category not found with id: " + id));
+
+        existingCategory.setName(updatedCategory.getName());
+        existingCategory.setDescription(updatedCategory.getDescription());
+
+        return categoryRepository.save(existingCategory);
     }
 
     @Transactional(readOnly = true)
